@@ -18,3 +18,4 @@ steps:
       
       echo 'ID:'  "$(Build.Repository.ID)"
       echo 'Name:'  "$(Build.Repository.Name)"
+      echo 'Provider:' "$(Build.Repository.Provider)"
