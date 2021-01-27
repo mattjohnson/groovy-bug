@@ -10,12 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Bash@3
+- task: SonatypeCloudPipelineTask@0
   inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo 'ID:'  "$(Build.Repository.ID)"
-      echo 'Name:'  "$(Build.Repository.Name)"
-      echo 'Provider:' "$(Build.Repository.Provider)"
+    SonatypeCloudService: 'Staging'
+    stage: 'Build'
