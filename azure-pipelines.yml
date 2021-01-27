@@ -13,4 +13,5 @@ steps:
 - task: SonatypeCloudPipelineTask@0
   inputs:
     SonatypeCloudService: 'Staging'
+    applicationId: 'mattjohnson/groovy-bug'
     stage: 'Build'
