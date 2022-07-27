@@ -1,3 +1,3 @@
 # groovy-bug
 
-This is a bug
+This is a bug.
